@@ -1,0 +1,4 @@
+node_modules
+.idea
+transactions.csv
+transactions.csv.zip

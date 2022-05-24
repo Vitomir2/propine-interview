@@ -1,0 +1,30 @@
+{
+  "name": "propine-challenge",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "author": "artisanchuchu",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main.js",
+    "start:dev": "nodemon dist/main.js",
+    "setup": "curl https://s3-ap-southeast-1.amazonaws.com/static.propine.com/transactions.csv.zip  --output transactions.csv.zip && unzip transactions.csv.zip",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^17.0.35",
+    "@types/qs": "^6.9.7",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.1",
+    "inquirer": "^8.2.4",
+    "nanospinner": "^1.1.0",
+    "node-fetch": "^3.2.4",
+    "qs": "^6.10.3",
+    "typescript": "^4.6.4"
+  }
+}
