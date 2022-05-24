@@ -31,6 +31,6 @@ This interactive CLI tool returns portfolio values for tokens. You may specify a
 
 In this implementation, the whole file is never loaded completely into memory as memory is a limited resource, and we may not be able to predict exactly how much we will need in the future if it works that way.
 
-In this implementation, the trasaction history is instead streamed into the program, a single record at a time, and the useful information is extracted from each record and consumed.
+In this implementation, the transaction history is instead streamed into the program, a single record at a time, and the useful information is extracted from each record and consumed.
 
-Pricing information is obtained at on the fly with cryptocompare.com's public API, so the pricing information for token is pretty much guaranteed to always be up-to-date.
+Pricing information is obtained on the fly with cryptocompare.com's public API, so the pricing information for token is pretty much guaranteed to always be up-to-date.
